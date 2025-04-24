@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WPI Research Experience - Fernando Ebensperger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Research at Worcester Polytechnic Institute</h1>
+
+    <section>
+        <h2>Overview</h2>
+        <p>Since January 2023, I've been working as a Research Assistant at Worcester Polytechnic Institute (WPI) in the Fire Protection Engineering Department. My primary research involves understanding firebrand generation, transport, and ignition behavior in wildland-urban interface (WUI) fires. I specialize in designing, executing, and analyzing controlled wind tunnel experiments.</p>
+    </section>
+
+    <section>
+        <h2>Main Research Areas</h2>
+
+        <h3>Firebrand Generation and Transport</h3>
+        <ul>
+            <li>Design and execution of intermediate-scale experiments to quantify and characterize firebrands under controlled laboratory conditions.</li>
+            <li>Development of innovative image processing techniques (e.g., U-Net neural networks) for detecting and tracking firebrands in real-time.</li>
+            <li>Statistical and physical modeling of firebrand production rates, mass loss behavior, and aerodynamic properties.</li>
+        </ul>
+
+        <h3>Wind Tunnel Development</h3>
+        <ul>
+            <li>Led the redesign and implementation of a modular, large-scale wind tunnel to facilitate a variety of fire research experiments.</li>
+            <li>Conducted Computational Fluid Dynamics (CFD) analyses using Fire Dynamics Simulator (FDS) and ANSYS Fluent to optimize tunnel configurations.</li>
+            <li>Characterized flow conditions (velocity, turbulence intensity, flow uniformity) using advanced instrumentation such as hot-wire anemometry and digital imaging.</li>
+        </ul>
+
+        <div class="cute-image-container">
+            <img src="images/wind_tunnel_setup.jpg" alt="Real wind tunnel setup">
+            <p class="image-caption">Current experimental setup of the modular wind tunnel at WPI.</p>
+        </div>
+
+        <div class="cute-image-container">
+            <img src="images/wind_tunnel_design.png" alt="Wind tunnel CAD design">
+            <p class="image-caption">CAD design illustrating key components of the wind tunnel.</p>
+        </div>
+
+
+        <h3>Data Analysis Using UNet-based Image Recognition</h3>
+        <p>
+            To overcome the challenges associated with accurately quantifying firebrands, I developed an advanced image analysis methodology based on the UNet Convolutional Neural Network architecture proposed by Ronneberger et al. (2015). The model was specifically trained to segment and detect firebrands within experimental videos, enabling precise quantification of generated firebrands across different experimental conditions.
+        </p>
+
+        <ul>
+            <li>Implemented and optimized a UNet-based segmentation network, trained using custom-annotated datasets from wind tunnel experiments.</li>
+            <li>Achieved robust segmentation accuracy, allowing for real-time particle detection and tracking.</li>
+            <li>Automated the data extraction workflow by analyzing segmentation results with Python scripts to provide comprehensive statistics on firebrand production and behavior.</li>
+        </ul>
+
+        <div class="cute-image-container">
+            <img src="images/unet_architecture.png" alt="UNet Architecture diagram">
+            <p class="image-caption">UNet Convolutional Neural Network architecture used for firebrand segmentation (adapted from Ronneberger et al., 2015).</p>
+        </div>
+
+        <p><strong>Reference:</strong> Ronneberger, O., Fischer, P., & Brox, T. (2015). U-Net: Convolutional Networks for Biomedical Image Segmentation. In <em>International Conference on Medical image computing and computer-assisted intervention</em> (pp. 234-241). Springer, Cham.</p>
+
+    </section>
+
+    <section>
+        <h2>Conference Participation</h2>
+        <p>During my tenure at WPI, I've participated in leading academic conferences, presenting ongoing research.</p>
+        <ul>
+            <li>
+                <strong>14th US National Combustion Meeting (USNCM)</strong>: Delivered an oral presentation titled 
+                <em>"Oscillatory Wind Flow Behavior Impact on Firebrand Burning Rate"</em>, highlighting recent findings on firebrand behavior under controlled wind conditions. (March 2025)
+            </li>
+        </ul>
+        <p><em>Note: Publications are forthcoming and currently in preparation for submission to peer-reviewed journals.</em></p>
+    </section>
+    
+
+    <p><a href="index.html">← Back to Homepage</a></p>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
