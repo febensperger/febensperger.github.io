@@ -133,7 +133,7 @@ footer:
     #   url:
 
 # Reading Files
-4:25 AM 4/25/2025:
+include:
   - .htaccess
   - _pages
 exclude:
