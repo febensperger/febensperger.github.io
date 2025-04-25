@@ -1,34 +1,221 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+
+# Theme Settings
+# theme                  : "minimal-mistakes-jekyll"
+# remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "mint"
 
 # Site Settings
-title: "Fernando Ebensperger"
-title_separator: "-"
-subtitle: "Fire Protection Engineering Researcher"
-name: "Fernando Andrés Ebensperger"
-description: "Researcher focused on firebrand dynamics, experimental fire testing, and wind tunnel-based wildfire analysis."
-locale: "en-US"
-url: "https://fernandoebensperger.github.io" # Update this with actual username if different
-baseurl: "" # no subpath
-repository: "fernandoebensperger/fernandoebensperger.github.io"
+locale                   : "en-US"
+rtl                      : # true, false (default)
+title                    : "Fernando Ebensperger"
+title_separator          : "-"
+subtitle                 : "Fire Protection Engineering Researcher"
+name                     : "Fernando Andrés Ebensperger"
+description              : "Researcher focused on firebrand dynamics and wind-driven wildfire behavior."
+url                      : "https://fernandoebensperger.github.io"
+baseurl                  : 
+repository               : # GitHub username/repo-name
+teaser                   : # /assets/images/500x300.png
+logo                     : # /assets/images/88x88.png
+masthead_title           : 
+breadcrumbs              : # true, false
+words_per_minute         : 200
+enable_copy_code_button  : # true, false
+copyright                : 
+copyright_url            : 
+comments:
+  provider               : 
+  disqus:
+    shortname            : 
+  discourse:
+    server               : 
+  facebook:
+    appid                :
+    num_posts            : 
+    colorscheme          : 
+  utterances:
+    theme                : 
+    issue_term           : 
+  giscus:
+    repo_id              : 
+    category_name        : 
+    category_id          : 
+    discussion_term      : 
+    reactions_enabled    : 
+    theme                : 
+    strict               : 
+    input_position       : 
+    emit_metadata        : 
+    lang                 : 
+    lazy                 : 
+  staticman:
+    branch               : 
+    endpoint             : 
+reCaptcha:
+  siteKey                :
+  secret                 :
+atom_feed:
+  path                   : 
+  hide                   : 
+search                   : # true, false
+search_full_content      : # true, false
+search_provider          : # lunr, algolia, google
+lunr:
+  search_within_pages    : # true, false
+algolia:
+  application_id         : 
+  index_name             : 
+  search_only_api_key    : 
+  powered_by             : 
+google:
+  search_engine_id       : 
+  instant_search         : 
 
-minimal_mistakes_skin: "mint"
-markdown: kramdown
-highlighter: rouge
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+naver_site_verification  :
+yandex_site_verification :
+baidu_site_verification  :
 
-# Author Information
+# Social Sharing
+twitter:
+  username               :
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : 
+social:
+  type                   : Person
+  name                   : "Fernando Andrés Ebensperger"
+  links:
+    - "https://www.linkedin.com/in/fernando-ebensperger-49819519b/"
+
+# Analytics
+analytics:
+  provider               : 
+  google:
+    tracking_id          :
+    anonymize_ip         : 
+
+# Site Author
 author:
-  name: "Fernando Andrés Ebensperger"
-  avatar: "/assets/images/fer_ebens.jpg"
-  bio: "PhD student at WPI | Exploring wind and firebrand behavior in wildland-urban interface fires."
-  location: "Worcester, MA, USA || Chile"
+  name             : "Fernando Andrés Ebensperger"
+  avatar           : "/assets/images/fer_ebens.jpg"
+  bio              : "PhD student at WPI | Exploring wind and firebrand behavior in wildland-urban interface fires."
+  location         : "Worcester, MA, USA || Chile"
+  email            :
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/fernando-ebensperger-49819519b/"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "mailto:your.name@email.com"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/"
 
-# Navigation
-header_pages:
-  - _pages/cv.md
-  - _pages/projects.md
+# Site Footer
+footer:
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/fernando-ebensperger-49819519b/"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url:
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - minimal-mistakes-jekyll.gemspec
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs
+  - /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\\n\\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+timezone:
+
+# Pagination with jekyll-paginate
+paginate: 5
+paginate_path: /page:num/
+
+# Pagination with jekyll-paginate-v2
+pagination:
+  debug: false
+  collection: 'posts'
+  per_page: 10
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  category: 'posts'
+  tag: ''
+  locale: ''
+  trail:
+    before: 2
+    after: 2
 
 # Plugins
 plugins:
@@ -38,18 +225,29 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-# Footer
-footer:
-  links:
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/fernando-ebensperger-49819519b/"
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
 
-# Other Settings
-permalink: /:categories/:title/
-paginate: 5
-paginate_path: /page:num/
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Defaults
 defaults:
   - scope:
       path: ""
@@ -58,5 +256,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+      comments: # true
       share: true
       related: true
