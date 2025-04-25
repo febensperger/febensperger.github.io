@@ -162,3 +162,41 @@ section:hover {
 .image-smaller img {
     width: 90%;
 }
+
+/* 🔥 Side-by-side image layout with equal size and cuteness */
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.image-box {
+    flex: 1 1 48%;
+    background-color: #fff8f8;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(178,34,34,0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.image-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(178,34,34,0.3);
+}
+
+.image-caption {
+    color: #b22222;
+    font-style: italic;
+    font-size: 0.95em;
+    margin-top: 8px;
+}
+
