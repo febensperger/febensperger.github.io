@@ -1,9 +1,10 @@
 ---
-title: "Curriculum Vitae"
+title: "CV"
 permalink: /cv/
 layout: single
 author_profile: true
 ---
+
 
 # Fernando Andrés Ebensperger
 

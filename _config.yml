@@ -260,7 +260,3 @@ defaults:
       comments: # true
       share: true
       related: true
-
-header_pages:
-  - _pages/cv.md
-  - _pages/projects.md
